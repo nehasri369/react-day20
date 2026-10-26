@@ -1,0 +1,186 @@
+
+/* General styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #e8eeff, #f5f0ff);
+  color: #24304a;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 8%;
+  background-color: white;
+  box-shadow: 0 3px 15px rgba(30, 50, 100, 0.1);
+}
+
+.welcome {
+  color: #3730a3;
+  font-size: 26px;
+}
+
+/* Navbar buttons container */
+.nav-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.navbar button {
+  padding: 11px 20px;
+  border: none;
+  border-radius: 8px;
+  color: rgb(38, 36, 36);
+  background-color:rgb(216, 218, 208) ;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Sign Up button */
+.nav-buttons a:nth-child(1) button {
+  background-color: #059669;
+}
+
+.nav-buttons a:nth-child(1) button:hover {
+  background-color: #047857;
+}
+
+/* Login button */
+.nav-buttons a:nth-child(2) button {
+  background-color: #ea580c;
+}
+
+.nav-buttons a:nth-child(2) button:hover {
+  background-color: #c2410c;
+}
+
+/* Home button */
+.nav-buttons a:nth-child(3) button {
+  background-color: #5b55d9;
+}
+
+.nav-buttons a:nth-child(3) button:hover {
+  background-color: #3730a3;
+}
+
+/* Login and Signup forms */
+.login-container,
+.signup-container {
+  width: 90%;
+  max-width: 400px;
+  margin: 70px auto;
+  padding: 30px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(45, 55, 100, 0.12);
+}
+
+/* Form headings */
+.login-container h1,
+.signup-container h1 {
+  text-align: center;
+  color: #3730a3;
+  margin-bottom: 20px;
+}
+
+/* Labels */
+.login-container label,
+.signup-container label {
+  display: block;
+  margin: 16px 0 8px;
+  font-weight: bold;
+  color: #34415c;
+}
+
+/* Input fields */
+.login-container input,
+.signup-container input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #d7dcef;
+  border-radius: 7px;
+  outline: none;
+  font-size: 15px;
+}
+
+.login-container input:focus,
+.signup-container input:focus {
+  border-color: #5b55d9;
+  box-shadow: 0 0 0 3px rgba(91, 85, 217, 0.12);
+}
+
+/* Form buttons */
+.login-container button,
+.signup-container button {
+  width: 100%;
+  margin-top: 22px;
+  padding: 13px;
+  border: none;
+  border-radius: 8px;
+  background-color: #5b55d9;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-container button:hover {
+  background-color: #3730a3;
+}
+
+.signup-container button {
+  background-color: #5b58ed;
+}
+
+.signup-container button:hover {
+  background-color: #230ca3;
+}
+
+/* Mobile screens */
+@media (max-width: 480px) {
+  .navbar {
+    padding: 15px 10px;
+    gap: 8px;
+  }
+
+  .welcome {
+    font-size: 18px;
+  }
+
+  .nav-buttons {
+    gap: 5px;
+  }
+
+  .navbar button {
+    padding: 9px 10px;
+    font-size: 12px;
+  }
+
+  .login-container,
+  .signup-container {
+    margin-top: 40px;
+    padding: 22px;
+  }
+}
+
+.head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.namee{
+     padding-top: 300px;
+     font-size: 40px;
+}
